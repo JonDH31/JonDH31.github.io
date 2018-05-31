@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Word Guess</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/javascript" src="assets/javascript/game.js">
+</head>
+<body>
+    
+
+    <div class="container" style="border-radius: 10px;">
+            <div class="jumbotron" id="HangmanCover">
+                <h1 style="font-family: 'Anton', sans-serif;">Word Guess: Breakfast Edition</h1>   
+            </div>
+          </div> 
+        
+          <br style="margin-top:20px;">
+
+          
+        
+          <!--Message -->
+          <div class="container" style="color: white; font-size: 20px;">
+            <div class="container" >
+              <div class="row justify-content-md-center">
+                <div class="col-md-6">
+                  <p id = "StyleMiniHeading" style="font-family: 'IM Fell French Canon SC', serif;">Press Space Bar to get started!</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="container">
+              <div class="col-md-6">
+                  <div id="Guesses"></div>
+              </div>
+            </div>
+        
+            <div class="container">
+              <div class="col-md-6">
+                  <div id="TrackRecord" style="font-size: 20px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+
+          <div class="counter">
+                <p id='guesses'>Guesses Left: 5</p>
+                <p id='wins'>Wins: 0</p>
+                <p id='losses'>Losses: 0 </p>
+              </div>
+
+          <script type="text/javascript" src="assets/javascript/game.js"></script> 
+        
+    
+
+    
+</body>
+
+</html>
