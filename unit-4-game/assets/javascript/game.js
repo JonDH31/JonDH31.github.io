@@ -1,9 +1,9 @@
 var Wins = 0;
 var Losses = 0;
 var totalClicks = 0;
-var userTotal 
-var targetNum 
-var numClicks 
+var userTotal; 
+var targetNum; 
+var numClicks; 
 
 
 
@@ -13,10 +13,10 @@ var numClicks
 function startGame () {
     targetNum =  Math.floor(Math.random() * 120) + 19;
     numClicks = 0;
-    $("#Target-Number").html("Number to Guess:" + targetNum);
+    $("#Target-Number").html("Number to Guess: " + targetNum);
 
     userTotal = 0;
-    $("#User-Number").html("Total Score:");
+    $("#User-Number").html("Total Score: ");
 
 
 
@@ -46,7 +46,7 @@ function reset () {
     num3= Math.floor(Math.random()*12+1);
     num4= Math.floor(Math.random()*12+1);
     userTotal= 0;
-    $("#User-Number").text(userTotal);
+    $("#User-Number").html(userTotal);
 } 
 
 
@@ -65,11 +65,11 @@ $(document).ready(function() {
 
         numClicks++;
         totalClicks++;
-        $("#totalClicks").html("Total Clicks:" + totalClicks);
-        $("#gameClicks").html("Game Clicks:" + numClicks);
+        $("#totalClicks").html("Total Clicks: " + totalClicks);
+        $("#gameClicks").html("Game Clicks: " + numClicks);
 
         userTotal = userTotal + valNum;
-        $("#User-Number").html("Total Score:" + userTotal);
+        $("#User-Number").html("Total Score: " + userTotal);
 
 
         //Create conditional statements to update game status
@@ -81,14 +81,14 @@ $(document).ready(function() {
             if (userTotal===targetNum) {
                 Wins++;
                 $("#Wins").html("Wins:" + Wins);
-                reset();
+                startGame();
                 
             
 
             } else if (userTotal>targetNum) {
                 Losses++;
                 $("#Losses").html("Losses:" + Losses);
-                reset();
+                startGame();
             }
     }
 
