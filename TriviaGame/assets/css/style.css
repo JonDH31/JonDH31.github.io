@@ -1,0 +1,15 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: green;
+
+}
+
+header {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
