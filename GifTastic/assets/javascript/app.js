@@ -17,23 +17,22 @@ function displayGifButtons() {
         }
     }
 
-function addNewButton() {
-    $("addGif").on("click", function() {
+    $("#addGif").on("click", function() {
         var emotions = $("#action-input").val().trim();
-        if (emotion == "") {
+        if (emotions == "") {
             return false;
         }
-        emotions.push(action);
+        emotions.push(actions);
 
         displayGifButtons();
         return false;
 
     });
-}
+
 
 
 function removeLastButton() {
-    $("removeGif").on("click", function(){
+    $("#removeGif").on("click", function(){
         emotions.pop(action);
         displayGifButtons();
         return false;
@@ -66,9 +65,9 @@ function displayGifs() {
             gifDiv.append(gifRating);
 
             var gifImage = $("<img>");
-            gifImage.attr("src", results[i].images.fixed_height_small_still.url);
+            gifImage.attr("src", results[i].images.original_still.url);
             gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
-            gifImage.attr("data-animate", results[i].images.fixed_height_small_still.url);
+            gifImage.attr("data-animate", results[i].images.original.url);
             gifImage.attr("data-state", "still");
             gifImage.addClass("image");
             gifDiv.append(gifImage);
@@ -79,17 +78,19 @@ function displayGifs() {
 }
 
 displayGifButtons();
-addNewButton();
 removeLastButton();
 
 $(document).on("click", ".action", displayGifs);
 $(document).on("click", ".image", function() {
     var state = $(this).attr('data-state');
+    console.log($(this).attr('data-state'))
     if ( state == 'still') {
+        console.log($(this).data('animate'))
         $(this).attr('src', $(this).data('animate'));
         $(this).attr('data-state', 'animate');
     }
     else {
+        console.log($(this).data('still'))
         $(this).attr('src', $(this).data('still'));
         $(this).attr('data-state', 'still');
     }

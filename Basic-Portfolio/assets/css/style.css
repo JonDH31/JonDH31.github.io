@@ -1,0 +1,311 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 34px;
+	color: #777;
+	background: url("../images/concrete_seamless.png");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-bottom: 20px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+  
+h1,
+h2,
+h3 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+
+h1 {
+	padding-bottom: 20px;
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+}
+  
+h2,
+h3 {
+	font-size: 22px;
+}
+
+#duplicate {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	margin: 0 0 30px;
+	overflow: auto;
+	color: #fff;
+	background: #fff;
+	border-bottom: 2px solid #ccc;
+  
+}
+
+#logo {
+	float: left;
+	width: 250px;
+	height: 90px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #4aaaa5;
+}
+
+nav {
+	float: right;
+	margin-top: 25px;
+}
+  
+nav a {
+	display: inline-block;
+	padding-left: 15px;
+	margin-left: 15px;
+	line-height: 18px;
+	color: #999;
+	text-decoration: none;
+	border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+	border-left: 0 none;
+  }
+
+  
+  footer {
+	padding: 30px 0;
+	clear: both;
+	font-size: 12px;
+	color: #fff;
+	color: #ccc;
+	text-align: center;
+	background: #666;
+	border-top: 8px solid #4aaaa5;
+	height: 50px;
+  }
+
+  
+  h3, h2 {
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+	border-bottom: 2px solid #eee;
+  }
+
+  
+  #main-container {
+	padding-top: 130px;
+	min-height: calc(100vh - 70px);
+  }
+
+  
+  .main-section {
+	float: left;
+	width: 100%;
+	max-width: 960px;
+	padding: 30px;
+	margin: 0 0 40px;
+	background: #fff;
+	border: 1px solid #ddd;
+  }
+
+  
+  .work {
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 20px 0 25px;
+	overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+	margin-right: 40px;
+  }
+  
+  .work img {
+	width: 100%;
+	border: 0 none;
+	opacity: 0.8;
+  }
+  
+  .work h3 {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 0;
+	font-weight: 300;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background: #4aaaa5;
+	border-bottom: 0;
+  }
+  
+  .auth-image {
+	float: left;
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 25px;
+  }
+
+  
+
+  #contact-form ul {
+	margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+	margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+	display: block;
+	width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+	height: 35px;
+	padding: 0 10px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+  }
+  
+  textarea {
+	height: 200px;
+  }
+  
+  input[type=submit] {
+	padding: 10px 30px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	background: #4aaaa5;
+	border: 0 none;
+  }
+  
+
+	.section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	@media screen and (min-width: 980px) {
+
+	}
+
+	@media screen and (min-width: 768px) {
+
+	}
+
+	@media screen and (min-width: 640px) {
+		position: static;
+
+	}
+
+	/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
